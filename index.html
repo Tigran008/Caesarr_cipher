@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Կեսար Գաղտնագրություն</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+  <div class="container">
+    <h1>Կեսարի Գաղտնագիր</h1>
+
+    <div class="input-field">
+      <label for="inputText">Մուտքագրեք տեքստը:</label>
+      <input type="text" id="inputText" placeholder="Գրեք ձեր տեքստը այստեղ">
+    </div>
+
+    <div class="input-field">
+      <label for="shift">Տառաշարժի մակարդակ:</label>
+      <input type="number" id="shift" placeholder="Մուտքագրեք տառաշարժը (օր.` 3)" min="1" max="38">
+    </div>
+
+    <div class="input-field">
+      <label for="outputText">Արդյունք:</label>
+      <input type="text" id="outputText" placeholder="Արդյունքը կհայտնվի այստեղ" readonly>
+    </div>
+
+    <button class="btn" onclick="processText(true)">Կոդավորել</button>
+    <button class="btn decode" onclick="processText(false)">Ապակոդավորել</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
